@@ -30,9 +30,9 @@ public class PrintStats extends Print{
 			jsonArray.add(jsonObject);	//return error 
 		}
 		else {
-			List<Statistiche> stats = new ArrayList<>();	//create a list to store stats, each object contains the stats of one attribute
+			List<Stats> stats = new ArrayList<>();	//create a list to store stats, each object contains the stats of one attribute
 			for(int i=0; i<attribute.size(); i++) {
-				stats.add(new Statistiche(super.data,  attribute.get(i)));
+				stats.add(new Stats(super.data,  attribute.get(i)));
 				if (stats.get(i).calcStats()) {	//calculate stats and return false if the attribute doesn't exist
 					jsonArray.add(stats.get(i).print());	//add stats to the list of the stats to print
 				}

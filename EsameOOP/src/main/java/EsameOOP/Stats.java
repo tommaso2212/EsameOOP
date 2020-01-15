@@ -8,7 +8,7 @@ import com.google.gson.JsonObject;
  * @author Tommaso2212
  *
  */
-public class Statistiche {
+public class Stats {
 	
 	private Data data;	//instance of data
 	private String attribute;	//name of attribute
@@ -25,7 +25,7 @@ public class Statistiche {
 	 * @param data
 	 * @param attribute
 	 */
-	public Statistiche(Data data, String attribute) {
+	public Stats(Data data, String attribute) {
 		this.data = data;
 		this.attribute = attribute;
 	}
@@ -80,7 +80,7 @@ public class Statistiche {
 		for(int i=0; i<column.size(); i++) {
 			dev += Math.pow(column.get(i)-this.avg, 2);	//calc square deviation for each element of the column
 		}
-		return Math.sqrt(dev/this.count);	//return medium square deviation
+		return Math.sqrt(dev/(this.count-1));	//return medium square deviation
 	}
 	
 	/**
