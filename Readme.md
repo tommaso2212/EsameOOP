@@ -21,7 +21,14 @@ The standard deviation is calculated implementing the formula described at https
 * Print stats
   * Print stats for given attribute - http://localhost:8080/printStats?attribute=name
   * Print stats for more attributes - http://localhost:8080/printStats?attribute=name1&attribute=name2&...
-  
-### Test example
+ 
+### UML Diagrams
+##### Class diagram
+![](images/class.png)
+##### Use case diagram
+![](images/Use_Case.jpg)
+##### Sequence diagram
+![](images/Sequence.jpg)
+
 
   

@@ -17,7 +17,9 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.sirius.nature.modelingproject</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
+		<nature>org.obeonetwork.dsl.uml2.core.umlProjectNature</nature>
 	</natures>
 </projectDescription>
